@@ -44,4 +44,5 @@ if __name__ == "__main__":
 
     # DETERMINE THE WINNER
 
-    determine_winner(user_choice, computer_choice)
+    result = determine_winner(user_choice, computer_choice)
+    print(result) 
