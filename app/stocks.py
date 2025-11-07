@@ -20,5 +20,3 @@ fig = px.line(stocks_df, x="timestamp", y="adjusted_close",
               height=450
               )
 fig.show()
-
-#plz work
