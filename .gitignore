@@ -9,5 +9,5 @@ __pycache__
 .pytest_cache
 # hidden file on mac:
 .DS_Store
-
+.env
 # secret credentials
