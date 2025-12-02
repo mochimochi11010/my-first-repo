@@ -3,7 +3,7 @@
 
 from flask import Blueprint, request, render_template, redirect, flash
 
-from app.stocks import fetch_stocks_data, format_usd
+from app.stocks import fetch_stocks_csv, to_usd
 
 stocks_routes = Blueprint("stocks_routes", __name__)
 
