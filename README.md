@@ -62,4 +62,17 @@ Create a local ".env" file and store your environment variable in there:
 # this is the ".env" file...
 
 ALPHAVANTAGE_API_KEY="______________"
+FLASK_APP=web_app
+```
+
+### Web App
+
+Run the web app (then view in the browser at http://localhost:5000/):
+
+```sh
+#if we have the FLASK_APP=web_app env var in the ".env" file... this doesn't work for me so use MacOS instead
+flask run
+
+# Mac OS:
+FLASK_APP=web_app flask run
 ```
