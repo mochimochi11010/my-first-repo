@@ -28,8 +28,8 @@ def stocks_dashboard():
     symbol = request_data.get("symbol") or "NFLX"
 
     try:
-        df = fetch_stocks_data(symbol=symbol)
-        latest_close_usd = format_usd(df.iloc[0]["adjusted_close"])
+        df = fetch_stocks_csv(symbol=symbol)
+        latest_close_usd = to_usd(df.iloc[0]["adjusted_close"])
         latest_date = df.iloc[0]["timestamp"]
         data = df.to_dict("records")
 
@@ -60,7 +60,7 @@ def stocks_api():
     symbol = url_params.get("symbol") or "NFLX"
 
     try:
-        df = fetch_stocks_data(symbol=symbol)
+        df = fetch_stocks_csv(symbol=symbol)
         data = df.to_dict("records")
         return {"symbol": symbol, "data": data }
     except Exception as err:
