@@ -1,0 +1,1 @@
+{"status": {"open": {"video": 2, "dedupe": 5, "topic": 5, "audit": 3, "repair": 2, "benchmark": 15}, "done": 4492, "last_result": "2026-11-18T01:44:31Z", "answers": {"retry": 899, "applied": 4487, "rejected": 459, "failed": 1}}, "jobs": []}
